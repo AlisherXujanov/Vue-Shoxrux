@@ -14,7 +14,7 @@ npm install -g @vue/cli
 Once Vue CLI is installed, you can create a new Vue project by running:
 - RU: После установки Vue CLI вы можете создать новый проект Vue, запустив:
 ```bash
-vue create my-vue-app
+npm create vue@latest
 ```
 Replace my-vue-app with the name of your project. Follow the prompts to select presets for your project.
 - RU: Замените my-vue-app на имя вашего проекта. Следуйте инструкциям, чтобы выбрать настройки для вашего проекта.

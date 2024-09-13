@@ -11,7 +11,7 @@
 
 <body>
 
-    <div id="Vue-div">
+    <div id="app">
         <div class="container" v-bind:class="darkMode ? 'dark-mode' : ''">
             <div class="theme-toggler">
                 <input type="checkbox" v-model="darkMode">
@@ -52,9 +52,6 @@
                     } else {
                         return
                     }
-                },
-                toggleDarkMode() {
-                    this.darkMode = !this.darkMode
                 }
             },
             created() {
@@ -67,7 +64,7 @@
                 localStorage.setItem('goals', JSON.stringify(this.goals))
                 localStorage.setItem('dark-mode', JSON.stringify(this.darkMode))
             }
-        }).mount('#Vue-div')
+        }).mount('#app')
     </script>
 </body>
 
